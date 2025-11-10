@@ -1,0 +1,5 @@
+1. 'pancakes' had the highest tf-idf score, 'you' had the lowest.
+`tf` measures how frequently the word appeared in each document. In the sentence they're generally the same.
+`idf` measures how infrequently the word showed up in all documents. 'pancakes' is a detailed noun which usually come up with a specific context. Meanwhile 'you' is a general pronoun which can appear almost in each document. So 'pancakes' can have a larger weight.
+
+2. I think lemmatization is the most appropriate. Based on our limited tests, if we don't apply lemmatization during preprocessing, usually a common word's rare form can contribute a lot to ranking because it's high idf value. But usually they're sharing the same meaning in context regardless of the form.
