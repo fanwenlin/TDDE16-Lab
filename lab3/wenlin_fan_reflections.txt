@@ -1,0 +1,10 @@
+1. Besides the excessive labeled number, money, quantitive values and date, there are also some undistinguished entities like book names, paper names, also some misaligned entities, for example, some eneities in gold standard is partly predicted but missing the prefixing "the"
+To fix these issues, we need to finetune the model with the data fitting our rules. And, of course, computing resources is needed for the trainning.
+
+2. 
+without context: Precision: 0.660, Recall: 0.584, F1: 0.620
+with context:    Precision: 0.648, Recall: 0.605, F1: 0.626
+
+It seems like the context information is helpful for the recall but not the precision. In the end the F1 score just increases a little bit.
+I guess the main reason is that the training data is not enough for most mentions, as we can see in the warning text.
+Other contexts like document title might be also helpful for the disambiguation.
