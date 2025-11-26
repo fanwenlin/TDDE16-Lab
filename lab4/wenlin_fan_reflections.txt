@@ -1,0 +1,6 @@
+1. While k is growing, the metric is improving remarkablely until k=6. There is a outlining case when k=3 which might due to coincidence.
+I expect k=6 would be a good number of clusters. Because in the training data, there are 6 categories
+Evaluation measure suggests k=6 would be a good number of clusters.
+
+2. After passes grow to 15, there are no huge improvements in likelihood anymore. So 15 seems to be a good choice.
+They're obviously better ones. In the topics we got in Task 4.2, there are a lot vague topics for example 3, 6 and 7. But in the topics in Task 5.2, almost for each one we can figure out a distinct topic easily.
